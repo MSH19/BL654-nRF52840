@@ -1,5 +1,5 @@
 # BL654-nRF52840
-BL654 (nRF52840) board connected to AD5940/41 electrochemical front end from Analog Devices to implement voltametric, amperometric, and impedaometric measurements.     
+BL654 (nRF52840) board connected to AD5940/41 electrochemical front end from Analog Devices to implement voltametric, amperometric, and impedometric measurements.     
 
 Connect the two boards according to the following:      
 
@@ -7,7 +7,7 @@ Connect the two boards according to the following:
 
 ![alt text](images/ad5940.png)     
 
-![alt text](images/setup.png)          
+![alt text](images/set.png)          
 
 The results from the examples are shown below.      
 
