@@ -3,7 +3,7 @@ BL654 (nRF52840) board connected to AD5940/41 electrochemical front end from Ana
 
 Connect the two boards according to the following:      
 
-![alt text](images/bl654_connections.png)        
+![alt text](images/bl654.png)        
 
 ![alt text](images/ad5940_connections.png)     
 
