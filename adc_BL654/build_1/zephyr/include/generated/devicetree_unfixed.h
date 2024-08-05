@@ -113,7 +113,6 @@
  *   102 /soc/i2c@40003000/mcp4725@60
  *   103 /soc/spi@40004000
  *   104 /soc/spi@40004000/ad5940@0
- *   105 /soc/spi@40004000/mx25r6435f@0
  *
  * Definitions derived from these nodes in dependency order are next,
  * followed by /chosen nodes.
@@ -969,8 +968,7 @@
 	19, /* /leds/led_2 */ \
 	20, /* /leds/led_3 */ \
 	21, /* /leds/led_4 */ \
-	103, /* /soc/spi@40004000 */ \
-	105, /* /soc/spi@40004000/mx25r6435f@0 */
+	103, /* /soc/spi@40004000 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_gpio_50000000_EXISTS 1
@@ -10670,10 +10668,10 @@
 #define DT_N_S_soc_S_spi_40004000_CHILD_IDX 12
 
 /* Helper macros for child nodes of this node. */
-#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0)
-#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0, __VA_ARGS__)
-#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0) 
-#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, __VA_ARGS__) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0, __VA_ARGS__) 
+#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD(fn) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0)
+#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0, __VA_ARGS__)
+#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_STATUS_OKAY(fn) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0) 
+#define DT_N_S_soc_S_spi_40004000_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0, __VA_ARGS__) 
 
 /* Node's dependency ordinal: */
 #define DT_N_S_soc_S_spi_40004000_ORD 103
@@ -10688,8 +10686,7 @@
 
 /* Ordinals for what depends directly on this node: */
 #define DT_N_S_soc_S_spi_40004000_SUPPORTS_ORDS \
-	104, /* /soc/spi@40004000/ad5940@0 */ \
-	105, /* /soc/spi@40004000/mx25r6435f@0 */
+	104, /* /soc/spi@40004000/ad5940@0 */
 
 /* Existence and alternate IDs: */
 #define DT_N_S_soc_S_spi_40004000_EXISTS 1
@@ -10839,7 +10836,7 @@
 #define DT_N_S_soc_S_spi_40004000_S_ad5940_0_PARENT DT_N_S_soc_S_spi_40004000
 
 /* Node's index in its parent's list of children: */
-#define DT_N_S_soc_S_spi_40004000_S_ad5940_0_CHILD_IDX 1
+#define DT_N_S_soc_S_spi_40004000_S_ad5940_0_CHILD_IDX 0
 
 /* Helper macros for child nodes of this node. */
 #define DT_N_S_soc_S_spi_40004000_S_ad5940_0_FOREACH_CHILD(fn) 
@@ -10913,136 +10910,6 @@
 #define DT_N_S_soc_S_spi_40004000_S_ad5940_0_P_label_EXISTS 1
 
 /*
- * Devicetree node: /soc/spi@40004000/mx25r6435f@0
- *
- * Node identifier: DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0
- *
- * Binding (compatible = jedec,spi-nor):
- *   $ZEPHYR_BASE\dts\bindings\mtd\jedec,spi-nor.yaml
- *
- * (Descriptions have moved to the Devicetree Bindings Index
- * in the documentation.)
- */
-
-/* Node's full path: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_PATH "/soc/spi@40004000/mx25r6435f@0"
-
-/* Node's name with unit-address: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_FULL_NAME "mx25r6435f@0"
-
-/* Node parent (/soc/spi@40004000) identifier: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_PARENT DT_N_S_soc_S_spi_40004000
-
-/* Node's index in its parent's list of children: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_CHILD_IDX 0
-
-/* Helper macros for child nodes of this node. */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_FOREACH_CHILD(fn) 
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_FOREACH_CHILD_VARGS(fn, ...) 
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_FOREACH_CHILD_STATUS_OKAY(fn) 
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_FOREACH_CHILD_STATUS_OKAY_VARGS(fn, ...) 
-
-/* Node's dependency ordinal: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_ORD 105
-
-/* Ordinals for what this node depends on directly: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_REQUIRES_ORDS \
-	9, /* /soc/gpio@50000000 */ \
-	103, /* /soc/spi@40004000 */
-
-/* Ordinals for what depends directly on this node: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_SUPPORTS_ORDS /* nothing */
-
-/* Existence and alternate IDs: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_EXISTS 1
-#define DT_N_INST_0_jedec_spi_nor DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0
-
-/* Bus info (controller: '/soc/spi@40004000', type: 'spi') */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_BUS_spi 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_BUS DT_N_S_soc_S_spi_40004000
-
-/* Macros for properties that are special in the specification: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_REG_NUM 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_REG_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_REG_IDX_0_VAL_ADDRESS 0 /* 0x0 */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_RANGES_NUM 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_FOREACH_RANGE(fn) 
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_IRQ_NUM 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_COMPAT_MATCHES_jedec_spi_nor 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_STATUS_okay 1
-
-/* Pin control (pinctrl-<i>, pinctrl-names) properties: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_PINCTRL_NUM 0
-
-/* Generic property macros: */
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_IDX_0_PH DT_N_S_soc_S_gpio_50000000
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_IDX_0_VAL_pin 22
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_IDX_0_VAL_pin_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_IDX_0_VAL_flags 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_IDX_0_VAL_flags_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, wp_gpios, 0)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, wp_gpios, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_LEN 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wp_gpios_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_IDX_0_PH DT_N_S_soc_S_gpio_50000000
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_IDX_0_VAL_pin 23
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_IDX_0_VAL_pin_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_IDX_0_VAL_flags 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_IDX_0_VAL_flags_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, hold_gpios, 0)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, hold_gpios, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_LEN 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_hold_gpios_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_reg {0 /* 0x0 */}
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_reg_IDX_0 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_reg_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_reg_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, reg, 0)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_reg_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, reg, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_reg_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_spi_max_frequency 80000000
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_spi_max_frequency_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_duplex 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_duplex_ENUM_IDX 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_duplex_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_frame_format 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_frame_format_ENUM_IDX 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_frame_format_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible {"jedec,spi-nor"}
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_IDX_0 "jedec,spi-nor"
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_IDX_0_TOKEN jedec_spi_nor
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_IDX_0_UPPER_TOKEN JEDEC_SPI_NOR
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, compatible, 0)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, compatible, 0, __VA_ARGS__)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_LEN 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_compatible_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wakeup_source 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_wakeup_source_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_requires_ulbpr 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_requires_ulbpr_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_has_dpd 0
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_has_dpd_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id {194 /* 0xc2 */, 40 /* 0x28 */, 23 /* 0x17 */}
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_IDX_0 194
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_IDX_0_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_IDX_1 40
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_IDX_1_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_IDX_2 23
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_IDX_2_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_FOREACH_PROP_ELEM(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, jedec_id, 0) \
-	fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, jedec_id, 1) \
-	fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, jedec_id, 2)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_FOREACH_PROP_ELEM_VARGS(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, jedec_id, 0, __VA_ARGS__) \
-	fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, jedec_id, 1, __VA_ARGS__) \
-	fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, jedec_id, 2, __VA_ARGS__)
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_LEN 3
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_jedec_id_EXISTS 1
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_size 67108864
-#define DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0_P_size_EXISTS 1
-
-/*
  * Chosen nodes
  */
 #define DT_CHOSEN_zephyr_entropy                 DT_N_S_soc_S_crypto_5002a000
@@ -11093,7 +10960,6 @@
 #define DT_COMPAT_HAS_OKAY_nordic_nrf_radio 1
 #define DT_COMPAT_HAS_OKAY_nordic_nrf_uart 1
 #define DT_COMPAT_HAS_OKAY_nordic_nrf_spi 1
-#define DT_COMPAT_HAS_OKAY_jedec_spi_nor 1
 #define DT_COMPAT_HAS_OKAY_adi_ad5940 1
 #define DT_COMPAT_HAS_OKAY_nordic_nrf_gpiote 1
 #define DT_COMPAT_HAS_OKAY_nordic_nrf_saadc 1
@@ -11141,7 +11007,6 @@
 #define DT_N_INST_nordic_nrf_radio_NUM_OKAY 1
 #define DT_N_INST_nordic_nrf_uart_NUM_OKAY 1
 #define DT_N_INST_nordic_nrf_spi_NUM_OKAY 1
-#define DT_N_INST_jedec_spi_nor_NUM_OKAY 1
 #define DT_N_INST_adi_ad5940_NUM_OKAY 1
 #define DT_N_INST_nordic_nrf_gpiote_NUM_OKAY 1
 #define DT_N_INST_nordic_nrf_saadc_NUM_OKAY 1
@@ -11227,10 +11092,6 @@
 #define DT_FOREACH_OKAY_VARGS_nordic_nrf_spi(fn, ...) fn(DT_N_S_soc_S_spi_40004000, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_nordic_nrf_spi(fn) fn(0)
 #define DT_FOREACH_OKAY_INST_VARGS_nordic_nrf_spi(fn, ...) fn(0, __VA_ARGS__)
-#define DT_FOREACH_OKAY_jedec_spi_nor(fn) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0)
-#define DT_FOREACH_OKAY_VARGS_jedec_spi_nor(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_mx25r6435f_0, __VA_ARGS__)
-#define DT_FOREACH_OKAY_INST_jedec_spi_nor(fn) fn(0)
-#define DT_FOREACH_OKAY_INST_VARGS_jedec_spi_nor(fn, ...) fn(0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_adi_ad5940(fn) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0)
 #define DT_FOREACH_OKAY_VARGS_adi_ad5940(fn, ...) fn(DT_N_S_soc_S_spi_40004000_S_ad5940_0, __VA_ARGS__)
 #define DT_FOREACH_OKAY_INST_adi_ad5940(fn) fn(0)
@@ -11351,5 +11212,4 @@
 /*
  * Bus information for status "okay" nodes of each compatible
  */
-#define DT_COMPAT_jedec_spi_nor_BUS_spi 1
 #define DT_COMPAT_adi_ad5940_BUS_spi 1

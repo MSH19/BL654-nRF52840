@@ -965,19 +965,22 @@ zephyr_udc0: &usbd {
 # 48 "c:/Users/mahdi/Documents/GitHub/BL654-nRF52840/adc_BL654/boards/bl654_dvk.overlay"
 &spi1
 {
- status = "okay";
- cs-gpios = <&gpio0 31 (0 << 0)>;
- pinctrl-0 = <&spi1_default>;
- pinctrl-1 = <&spi1_sleep>;
- pinctrl-names = "default", "sleep";
- ad5940: ad5940@0
- {
-   compatible = "adi,ad5940";
-   reg = <0>;
-   spi-max-frequency = <8000000>;
-   label = "ad5940";
+   /delete-node/ mx25r6435f@0;
+
+   status = "okay";
+   cs-gpios = <&gpio0 31 (0 << 0)>;
+   pinctrl-0 = <&spi1_default>;
+   pinctrl-1 = <&spi1_sleep>;
+   pinctrl-names = "default", "sleep";
+   ad5940: ad5940@0
+   {
+  compatible = "adi,ad5940";
+  reg = <0>;
+  spi-max-frequency = <8000000>;
+  label = "ad5940";
  };
-};
+ };
+
 &pinctrl {
  spi1_default: spi1_default {
    group1 {
